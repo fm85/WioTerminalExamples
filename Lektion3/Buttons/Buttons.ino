@@ -1,3 +1,11 @@
+  
+/*
+  Buttons.ino
+  Copyright (C) 2020 by GBS St. Gallen, Inc. All rights reserved.
+  Released under the therms of the GNU General Public License version 3
+  or later.
+*/
+
 void setup() {
   Serial.begin(115200);
   pinMode(WIO_KEY_A, INPUT_PULLUP);
