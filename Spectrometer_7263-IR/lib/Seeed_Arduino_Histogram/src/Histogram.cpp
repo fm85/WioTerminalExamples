@@ -336,8 +336,7 @@ void TFT_Histogram::changeParam(uint8_t NO,char* lable,float Histogram_value,uin
   Histogram_width=30;
   this->compare();
   h=head->next;
-  int high_=0,width_P_=0; 
-  static int i=0;
+  int high_=0,width_P_=0;
   while(h!=NULL)
   {
     if(h->NO==NO)
@@ -355,7 +354,7 @@ void TFT_Histogram::changeParam(uint8_t NO,char* lable,float Histogram_value,uin
       if(width_P_<8) width_P_=8;
       tft_Histogram->fillRect(21,Histogram_width,high_+10,width_P_,TFT_WHITE);
       tft_Histogram->fillRect(4,Histogram_width,15,width_P_,TFT_WHITE);
-      Serial.println(width_P_);
+      //Serial.println(width_P_);
       strncpy(p->lable, lable, 23);
       p->value=Histogram_value;
       p->colour=colour;

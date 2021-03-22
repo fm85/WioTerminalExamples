@@ -373,7 +373,7 @@ uint8_t AS726X::readRegister(uint8_t addr)
 		return (_i2cPort->read());
 	}
 	else {
-		Serial.println("I2C Error");
+		//Serial.println("I2C Error");
 		return (0xFF); //Error
 	}
 }
